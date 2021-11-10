@@ -7,7 +7,7 @@ function insertAtCursor(){
         let front = (input.value).substring(0, pos);  
         let back = (input.value).substring(pos, input.value.length); 
         
-        input.value = front+'[beth][/beth]'+back;
+        input.value = front+middle+back;
         pos = pos + 6;
         
         input.selectionStart = pos;
